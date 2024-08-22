@@ -18,7 +18,7 @@ void jogo() {
     print('4. Sair');
 
     // Captura a opção do usuário
-    String? input = stdin.readLineSync(); // equivalente a ler a proxima linha
+    String? input = stdin.readLineSync();
     int? opcaoUsuario = int.tryParse(input ?? '');
 
     // Valida a entrada do usuário
@@ -59,3 +59,11 @@ void jogo() {
   }
 }
 
+/* - novos requisitos
+  - permitir ao usuário que escolha quantas rodadas deseja
+  - a cada rodada, dar um ponto para o vencedor
+  - mostrar o vencedor do jogo total no final
+  - se empatar, fazer "penaltis", ou seja, fazer uma única nova rodada até que alguém vença
+  - Alterar a probabilidade de ganho: computador vence cada rodada com 60% de chance
+  - Implementar o jogo inteiro utilizando funções
+  */
